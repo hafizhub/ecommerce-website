@@ -1,0 +1,185 @@
+<!doctype html>
+<html lang="en">
+
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Product Listing - MyShop</title>
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/css/bootstrap.min.css" rel="stylesheet"
+    integrity="sha384-sRIl4kxILFvY47J16cr9ZwB07vP4J8+LH7qKQnuqkuIAvNWLzeN8tE5YBujZqJLB" crossorigin="anonymous">
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.7.2/font/bootstrap-icons.css">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link rel="stylesheet" href="style.css">
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700;800;900&family=Playfair+Display:wght@700;900&display=swap" rel="stylesheet">
+</head>
+
+<body>
+  <!-- Header -->
+  <header>
+    <nav class="container navbar navbar-expand-lg navbar-dark">
+      <a class="navbar-brand" href="#">
+        <i class="bi bi-shop-window"></i> MyShop
+      </a>
+      <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav"
+        aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+        <span class="navbar-toggler-icon"></span>
+      </button>
+      <div class="collapse navbar-collapse" id="navbarNav">
+        <ul class="navbar-nav ms-auto">
+          <li class="nav-item">
+            <a class="nav-link active" href="#">
+              <i class="bi bi-house-door-fill"></i> Home
+            </a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="#">
+              <i class="bi bi-grid-fill"></i> Products
+            </a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="#">
+              <i class="bi bi-info-circle-fill"></i> About
+            </a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="#">
+              <i class="bi bi-envelope-fill"></i> Contact
+            </a>
+          </li>
+        </ul>
+      </div>
+    </nav>
+  </header>
+
+  <!-- Hero Section -->
+  <div class="hero-section">
+    <div class="container text-center">
+      <h1>Discover Premium Products</h1>
+      <p>Curated collection of high-quality items at unbeatable prices</p>
+      <div class="hero-stats">
+        <div class="hero-stat">
+          <span class="hero-stat-number">500+</span>
+          <span class="hero-stat-label">Products</span>
+        </div>
+        <div class="hero-stat">
+          <span class="hero-stat-number">50K+</span>
+          <span class="hero-stat-label">Happy Customers</span>
+        </div>
+        <div class="hero-stat">
+          <span class="hero-stat-number">4.8★</span>
+          <span class="hero-stat-label">Average Rating</span>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <!-- Category Section -->
+  <div class="container">
+    <div class="category-section">
+      <div class="category-pills">
+        <div class="category-pill active">
+          <i class="bi bi-grid-3x3-gap-fill"></i> All Products
+        </div>
+        <div class="category-pill">
+          <i class="bi bi-phone-fill"></i> Electronics
+        </div>
+        <div class="category-pill">
+          <i class="bi bi-watch"></i> Accessories
+        </div>
+        <div class="category-pill">
+          <i class="bi bi-house-fill"></i> Home & Living
+        </div>
+        <div class="category-pill">
+          <i class="bi bi-star-fill"></i> Best Sellers
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <!-- Product Section -->
+  <div class="container product-section">
+    <div class="section-header">
+      <h2 class="section-title">Featured Products</h2>
+      <p class="section-subtitle">Handpicked items just for you</p>
+    </div>
+ 
+
+    <!-- Products Grid -->
+    <div class="row g-4" id="myProducts"></div>
+  </div>
+
+  <!-- Footer -->
+  <footer>
+    <div class="container">
+      <div class="row">
+        <div class="col-lg-4 col-md-6 mb-4">
+          <div class="footer-brand">
+            <i class="bi bi-shop-window"></i> MyShop
+          </div>
+          <p class="text-muted" style="line-height: 1.8; font-size: 0.95rem;">
+            Your premium destination for discovering exceptional products at competitive prices. We curate the finest selection to bring joy to your shopping experience.
+          </p>
+          <div class="social-links mt-4">
+            <a href="#" class="social-link">
+              <i class="bi bi-facebook"></i>
+            </a>
+            <a href="#" class="social-link">
+              <i class="bi bi-twitter"></i>
+            </a>
+            <a href="#" class="social-link">
+              <i class="bi bi-instagram"></i>
+            </a>
+            <a href="#" class="social-link">
+              <i class="bi bi-linkedin"></i>
+            </a>
+          </div>
+        </div>
+        
+        <div class="col-lg-2 col-md-6 mb-4">
+          <h5>Quick Links</h5>
+          <ul>
+            <li><a href="#"><i class="bi bi-chevron-right"></i> About Us</a></li>
+            <li><a href="#"><i class="bi bi-chevron-right"></i> Shop</a></li>
+            <li><a href="#"><i class="bi bi-chevron-right"></i> Blog</a></li>
+            <li><a href="#"><i class="bi bi-chevron-right"></i> Careers</a></li>
+          </ul>
+        </div>
+
+        <div class="col-lg-3 col-md-6 mb-4">
+          <h5>Customer Service</h5>
+          <ul>
+            <li><a href="#"><i class="bi bi-chevron-right"></i> Contact Us</a></li>
+            <li><a href="#"><i class="bi bi-chevron-right"></i> Shipping Info</a></li>
+            <li><a href="#"><i class="bi bi-chevron-right"></i> Returns</a></li>
+            <li><a href="#"><i class="bi bi-chevron-right"></i> FAQ</a></li>
+          </ul>
+        </div>
+
+        <div class="col-lg-3 col-md-6 mb-4">
+          <h5>Legal</h5>
+          <ul>
+            <li><a href="#"><i class="bi bi-chevron-right"></i> Privacy Policy</a></li>
+            <li><a href="#"><i class="bi bi-chevron-right"></i> Terms of Service</a></li>
+            <li><a href="#"><i class="bi bi-chevron-right"></i> Cookie Policy</a></li>
+            <li><a href="#"><i class="bi bi-chevron-right"></i> Disclaimer</a></li>
+          </ul>
+        </div>
+      </div>
+
+      <div class="footer-bottom">
+        <p>&copy; 2026 MyShop. All rights reserved.</p>
+        <small style="color: #64748b;">
+          Crafted by Hafizullah
+        </small>
+      </div>
+    </div>
+  </footer>
+
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/js/bootstrap.bundle.min.js"
+    integrity="sha384-FKyoEForCGlyvwx9Hj09JcYn3nv7wiPVlz7YYwJrWVcXK/BmnVDxM+D2scQbITxI"
+    crossorigin="anonymous"></script>
+
+  <script src="script.js"></script>
+</body>
+</html>
